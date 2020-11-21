@@ -1,0 +1,753 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+} /* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  font-family: "Spoqa Han Sans", "Spoqa Han Sans JP", "Noto Sans KR";
+}
+body {
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+/* AppHeaderWithBack CSS */
+.AppheaderWithBack_header_button {
+  width: 32px;
+  height: 32px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  margin-left: 16px;
+  left: 0px;
+  padding: 0;
+  border: none;
+  background: none;
+}
+.AppheaderWithBack_title {
+  text-align: center;
+  color: white;
+  margin-left: -48px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.AppHeaderWithBack_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+}
+.AppheaderWithBack_header {
+  display: block;
+  justify-content: space-between;
+  background-color: black;
+  padding-bottom: 0px;
+  padding-top: 44px;
+  align-items: center;
+}
+/* AppHeader CSS */
+.banto_whiteBackground_withAppHeader {
+  background: white;
+  background-size: 100px 100px;
+  flex: 1 1 auto;
+  width: 100%;
+  display: flex;
+  z-index: 2;
+  overflow: auto;
+  position: relative;
+  flex-direction: column;
+  padding-top: 140px;
+}
+.banto_whiteBackground_withNav {
+  background: white;
+  background-size: 100px 100px;
+  flex: 1 1 auto;
+  width: 100%;
+  display: flex;
+  z-index: 2;
+  overflow: auto;
+  position: relative;
+  flex-direction: column;
+  padding-top: 50px;
+}
+.banto_blackBackground_withNav {
+  background: black;
+  background-size: 100px 100px;
+  flex: 1 1 auto;
+  width: 100%;
+  display: flex;
+  z-index: 2;
+  overflow: auto;
+  position: relative;
+  flex-direction: column;
+  padding-top: 80px;
+}
+.banto_blackBackground_withAppHeader {
+  background: black;
+  background-size: 100px 100px;
+  flex: 1 1 auto;
+  width: 100%;
+  display: flex;
+  z-index: 2;
+  overflow: auto;
+  position: relative;
+  flex-direction: column;
+  padding-top: 244px;
+  font-family: "Noto Sans KR";
+}
+.banto_blackBottomMargin {
+  width: 100%;
+  height: 150px;
+  background: black;
+  background-size: 100px 100px;
+  flex: 1 1 auto;
+  width: 100%;
+  display: flex;
+  z-index: 2;
+  overflow: auto;
+  position: relative;
+  flex-direction: column;
+}
+.banto_whiteBottomMargin {
+  width: 100%;
+  height: 150px;
+  background: white;
+  background-size: 100px 100px;
+  flex: 1 1 auto;
+  width: 100%;
+  display: flex;
+  z-index: 2;
+  overflow: auto;
+  position: relative;
+  flex-direction: column;
+}
+.EventCard_explanation {
+  margin-top: 10px;
+
+  font-size: 12px;
+  font-family: sans-serif;
+  color: #b9b9b9;
+}
+
+.DetailPage_titleSection {
+  font-family: "Noto Sans KR";
+  font-size: 26px;
+  width: 100%;
+  margin-top: 40px;
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom: 40px;
+}
+.DetailPage_img {
+  width: calc(100%);
+}
+.DetailPage_bottomButton {
+  position: fixed;
+  z-index: 10;
+  height: 66px;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  width: calc(100% - 40px);
+  background-color: black;
+  border: none;
+  color: white;
+  font-size: 20px;
+}
+.DetailPage_details_textContainer {
+  margin: 50px;
+  font-family: "Noto Sans KR";
+}
+.DetailPage_details_title {
+  font-size: 18px;
+  text-decoration: underline;
+  margin-bottom: 40px;
+}
+.DetailPage_details_details_title {
+  margin-top: 35px;
+}
+
+.DetailPage_details_description {
+  margin-top: 5px;
+  line-height: 20px;
+}
+.Appheader_header {
+  display: block;
+  justify-content: space-between;
+  background-color: black;
+  padding-bottom: 20px;
+  padding-top: 44px;
+  align-items: center;
+}
+
+.Appheader_header_button_container {
+  display: flex;
+  align-items: center;
+  background-color: black;
+}
+.Appheader_header_empty_space {
+  width: 100%;
+}
+.Appheader_header_button {
+  width: 36px;
+  height: 36px;
+  margin-right: 23px;
+  margin-top: 16px;
+  padding: 0;
+  border: none;
+  background: none;
+}
+.Appheader_backButton_img {
+  width: 36px;
+  height: 36px;
+}
+.Appheader_text_container {
+  height: 69px;
+  display: flex;
+  align-items: left;
+  flex-direction: column;
+  background-color: black;
+  margin-left: 25px;
+  padding-top: 32px;
+  color: white;
+}
+.Appheader_header__title {
+  font-family: "Noto Sans KR";
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.Appheader_header__description {
+  font-family: "Noto Sans KR";
+  color: #636363;
+}
+.static {
+  top: 0px;
+  z-index: 3;
+  width: 100%;
+  position: fixed;
+}
+
+.DetailPage_static {
+  top: 0px;
+  z-index: 3;
+  width: 100%;
+  position: fixed;
+}
+.DetailPage_brand {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 12px;
+}
+.Nav_header {
+  display: block;
+  justify-content: space-between;
+  background-color: black;
+  padding-bottom: 5px;
+  padding-top: 15px;
+  align-items: center;
+}
+.Nav_header_button_container {
+  display: flex;
+  align-items: center;
+  background-color: black;
+}
+.Nav_header_empty_space {
+  width: 100%;
+}
+
+.selectionCard_main {
+  margin-top: 300px;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+/* policyAgreement */
+.agreeAll_text {
+  color: white;
+}
+.agremeentAll_container {
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-bottom: 16px;
+  top: 124px;
+  height: 56px;
+  background-color: #151517;
+  border: 1px solid #242427;
+  display: flex;
+  align-items: center;
+}
+.agree_button {
+  background-color: #151517;
+  border: none;
+  margin-left: 16px;
+  z-index: 2;
+}
+.agreeAll_text {
+  margin-left: 16px;
+  font-size: 16px;
+}
+.agree_button_img {
+  width: 24px;
+  height: 24px;
+  z-index: 1;
+}
+
+.disAgree_button_img {
+  width: 24px;
+  height: 24px;
+  z-index: 1;
+}
+.agreementEach_container {
+  margin-left: 16px;
+  margin-right: 16px;
+  height: 56px;
+  background-color: #151517;
+  border: 1px solid #242427;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid;
+}
+.agreementEach_box {
+  display: flex;
+  align-items: center;
+  height: 56px;
+  border-bottom: none;
+  align-items: center;
+}
+.agreementEach_container2 {
+  margin-left: 16px;
+  margin-right: 16px;
+  height: 112px;
+  background-color: #151517;
+  border: 1px solid #242427;
+  align-items: center;
+  border-bottom: 1px solid;
+}
+.agreementWith_explain {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.agree_description {
+  margin-left: 18px;
+  margin-right: 18px;
+
+  font-size: 16px;
+  text-align: left;
+  font-size: 12px;
+  line-height: 18px;
+  color: #94949d;
+}
+.agreeNext_button {
+  margin-top: 40px;
+  background-color: black;
+  border: none;
+}
+.passButton_img {
+  height: 56px;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+/* loginpageforweb */
+#create-kakao-login-btn {
+  position: fixed;
+
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+
+  color: white;
+  text-align: center;
+  top: 80%;
+}
+.allBlack {
+  width: 100%;
+  height: 100vh;
+  background-color: #050505;
+  overflow: auto;
+}
+.loginPageStore {
+  position: fixed;
+
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  color: white;
+  text-align: center;
+  top: 40%;
+  font-size: 18px;
+}
+.loginPageTitle {
+  position: fixed;
+
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  color: white;
+
+  text-align: center;
+  font-size: 24px;
+  top: 15%;
+}
+
+.loginPageLogo {
+  width: 44px;
+  height: 44px;
+  position: fixed;
+
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 28%;
+}
+/* kakaopayregisterForWeb */
+.kakaoPayRegisterTextContainer {
+  position: flex;
+  background-color: #050505;
+  overflow: auto;
+  margin-left: 16px;
+  margin-top: 35%;
+}
+.kakaoPayRegisterTitle {
+  margin: 0 auto;
+  font-family: Noto Sans CJK KR;
+  font-size: 30px;
+  font-weight: bold;
+  color: #dfdfe4;
+}
+.kakaoPayRegisterDescription {
+  left: 16px;
+  color: white;
+  margin-top: 12px;
+  font-size: 18px;
+  font-weight: 300;
+  font-size: 26px;
+  line-height: 38px;
+  color: #dfdfe4;
+}
+.kakaoPayRegisterButtonContainer {
+  position: fixed;
+  bottom: 40px;
+  left: 16px;
+  right: 16px;
+}
+
+.kakaoPayRegisterButton {
+  background-color: #050505;
+  color: white;
+  border: 2px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 13px;
+  height: 66px;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin: auto;
+  width: 100%;
+  font-family: Noto Sans CJK KR;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+}
+/* purchaseForWeb */
+.purchaseForWebTitlePriceInfoContainer {
+  position: flex;
+  text-align: center;
+  margin-top: 64px;
+}
+.purchaseForWebTitlePriceInfoTag {
+  height: 64px;
+  font-family: Noto Sans CJK KR;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 30px;
+  color: #eaebf1;
+}
+.purchaseForWebTitlePriceInfo {
+  font-family: Noto Sans CJK KR;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 74px;
+  color: #00c853;
+  height: 74px;
+}
+.purchaseForWebDetailInfoContainer {
+  margin-top: 56px;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+.purchaseForWebDetailPaymentInfoContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-bottom: 16px;
+}
+.purchaseForWebPaymentInfoTag {
+  font-family: Noto Sans CJK KR;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: #94949d;
+}
+.purchaseForWebPaymentInfo {
+  font-family: SF Pro Display;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #dfdfe4;
+}
+.purchaseForWebPaymentDetailInfoBoxContainer {
+  background: #15151a;
+  border: 2px solid #242427;
+  box-sizing: border-box;
+  border-radius: 15px;
+}
+.purchaseForWebPaymentDetailInfoTopPart {
+  font-family: Noto Sans CJK KR;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: #c0c1c5;
+  margin-left: 18px;
+
+  margin-top: 40px;
+}
+.purchaseForWebPaymentDetailInfoTopPartText1 {
+  font-family: Noto Sans CJK KR;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: #c0c1c5;
+}
+.purchaseForWebPaymentDetailInfoTopPartText2 {
+  font-family: Noto Sans CJK KR;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: #c0c1c5;
+  margin-top: 16px;
+  margin-bottom: 50px;
+}
+
+.purchaseForWebPaymentDetailInfoDivider {
+  border: 1px solid #050505;
+  margin-left: 18px;
+  margin-right: 18px;
+  margin-bottom: 16px;
+}
+
+.purchaseForWebPaymentDetailInfoBottomPart {
+  display: flex;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.purchaseDetailLittleContainer {
+  display: flex;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  flex-direction: rows;
+  justify-content: space-between;
+  margin-left: 16px;
+  margin-right: 16px;
+  color: #c0c1c5;
+}
+
+.purchaseDetailLittleTextTag {
+  font-family: Noto Sans CJK KR;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: #94949d;
+}
+
+.purchaseDetailLittleText {
+  font-family: SF Pro Display;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  text-align: right;
+  color: #dfdfe4;
+}
+.purchaseForWebButtonContainer {
+  position: fixed;
+  left: 16px;
+  right: 16px;
+  bottom: 50px;
+}
+.purchaseForWebButton {
+  width: 100%;
+  height: 66px;
+  background: #00e676;
+  border-radius: 15px;
+  border: none;
+  font-family: Noto Sans CJK KR;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+}
+.purchaseForWebEmptySpace {
+  width: 100%;
+  height: 300px;
+}
+
+/* batteryRentComplete */
+.batteryRentCompleteText {
+  margin-top: 24px;
+  color: #eaebf1;
+  font-family: Noto Sans CJK KR;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 36px;
+}
+.rentSuccessImage {
+  width: 130px;
+  height: 130px;
+}
+.rentSucessContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 36%;
+}
+/* rentFail */
+.rentFailArrow {
+  width: 24px;
+  height: 24px;
+}
